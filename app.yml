@@ -5,4 +5,4 @@ config:
     - apt-get update && apt-get install -y wget
     - cd /root/ && wget https://github.com/Humerus/DO-PocketMine-Installer/releases/download/1.0/pocketmine.tar.gz
     - cd /root/ && tar -zxvf pocketmine.tar.gz
-    - cd /root/PocketMine-MP && ./start.sh &
+    - cd /root/PocketMine-MP && ./start.sh --no-wizard &
