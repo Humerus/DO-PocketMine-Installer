@@ -1,9 +1,8 @@
 name: PocketMine-MP
 image: ubuntu-15-04-x64
 config:
-  packages:
-    - wget
   runcmd:
+    - apt-get update && apt-get install -y wget
     - mkdir /root/PocketMine-MP
     - cd /root/PocketMine-MP && wget -q -O - http://get.pocketmine.net/ | bash -s - -v development
     - /root/PocketMine-MP/start.sh & 
