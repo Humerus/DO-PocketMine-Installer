@@ -3,6 +3,6 @@ image: ubuntu-15-04-x64
 config:
   runcmd:
     - apt-get update && apt-get install -y wget
-    - mkdir /root/PocketMine-MP
-    - cd /root/PocketMine-MP && wget -q -O - http://get.pocketmine.net/ | bash -s - -v development -r
-    - cd /root/PocketMine-MP && ./start.sh & 
+    - cd /root/ && wget https://github.com/Humerus/DO-PocketMine-Installer/releases/download/1.0/pocketmine.tar.gz
+    - cd /root/ && tar -zxvf pocketmine.tar.gz
+    - cd /root/PocketMine-MP && ./start.sh &
